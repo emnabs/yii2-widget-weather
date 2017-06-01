@@ -1,0 +1,701 @@
+/*!
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2017
+ * @package yii2-widgets
+ * @version 1.1.1
+ *
+ * Styling for \kartik\widgets\Alert widget for Bootstrap 3.x
+ * Built for Yii Framework 2.0
+ * Author: Kartik Visweswaran
+ * Year: 2014
+ * For more Yii related demos visit http://demos.krajee.com
+ */
+.sky {
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color:#007fd5;
+}
+
+/*06-08 早晨 sky-morning*/
+.sky-morning {
+    background: #499ad1;
+    color:#499ad1;
+}
+/*09-12 上午 sky-forenoon*/
+.sky-forenoon {
+    background: #299DF0;
+    color:#299DF0;
+}
+/*13-14 中午 sky-noon*/
+.sky-noon {
+    background: #007fd5;
+    color:#007fd5;
+}
+/*15-17 下午 sky-afternoon*/
+.sky-afternoon {
+    background: #176CA2;/*#61a4d1;#127bb8*/
+    color:#176CA2;
+}
+/*18-19 傍晚 sky-evening*/
+.sky-evening {
+    background: #163d57;
+    color:#163d57;
+}
+/*20-22 晚上 sky-night*/
+.sky-night {
+    background: #052136;
+    color: #052136;
+}
+/*23-03 深夜 sky-latenight*/
+.sky-latenight {
+    background: #000000;
+    color: #000000;
+}
+/*04-05 凌晨 sky-beforedawn*/
+.sky-beforedawn {
+    background: #152C3B;
+    color: #152C3B;
+}
+
+.sky .clouds_one {
+    background-image: url("../images/cloud_one.png");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 9em;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_one 50s linear infinite;
+    -moz-animation: cloud_one 50s linear infinite;
+    -o-animation: cloud_one 50s linear infinite;
+    animation: cloud_one 50s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_two {
+    background-image: url("../images/cloud_two.png");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 10em;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_two 75s linear infinite;
+    -moz-animation: cloud_two 75s linear infinite;
+    -o-animation: cloud_two 75s linear infinite;
+    animation: cloud_two 75s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_three {
+    background-image: url("../images/cloud_three.png");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 7em;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_three 100s linear infinite;
+    -moz-animation: cloud_three 100s linear infinite;
+    -o-animation: cloud_three 100s linear infinite;
+    animation: cloud_three 100s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.sky .weather {
+    height:10em;
+    padding-left:12em;
+}
+
+.weather .weather-data{
+    height:100%;
+    color:#fff;
+    margin:4em 0 0;
+    text-align:center;
+}
+.weather .weather-data .temperature{
+    font-size:5em;
+    line-height: 2;
+}
+.weather .weather-data .weather-data-text{
+    display:inline-block;
+    padding-left:10px;
+}
+.weather .weather-data .weather-data-text > i{
+    display:block;
+    margin: 0;
+    font-style:normal;
+    text-align:left;
+}
+.weather .weather-data .city{
+    font-size: 2em;
+    padding-left:1em;
+}
+
+
+.weather p{
+    position:absolute;
+    right:1em;
+    bottom:1em;
+    margin: 0;
+    color:rgba(255,255,255,.6);
+    font-size:12px;
+}
+.weather h2.dan{
+    position:absolute;
+    right:2em;
+    top:3.5em;
+    margin: 0;
+    color:rgba(255,255,255,.8);
+    font-size:14px;
+    font-weight:400;
+}
+
+.weather-icon {
+    position: absolute;
+    display: block;
+    width: 12em;
+    height: 10em;
+    font-size: 1em;
+    left:0;
+    top:0;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 3.6875em;
+    height: 3.6875em;
+    margin: -1.84375em;
+    background: currentColor;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius:50%;
+    box-shadow:
+        -2.1875em 0.6875em 0 -0.6875em,
+        2.0625em 0.9375em 0 -0.9375em,
+        0 0 0 0.375em #fff,
+        -2.1875em 0.6875em 0 -0.3125em #fff,
+        2.0625em 0.9375em 0 -0.5625em #fff;
+}
+.cloud:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -0.5em;
+    display: block;
+    width: 4.5625em;
+    height: 1em;
+    background: currentColor;
+    box-shadow: 0 0.4375em 0 -0.0625em #fff;
+}
+.cloud:nth-child(2) {
+    z-index: 0;
+    background: #fff;
+    box-shadow:
+        -2.1875em 0.6875em 0 -0.6875em #fff,
+        2.0625em 0.9375em 0 -0.9375em #fff,
+        0 0 0 0.375em #fff,
+        -2.1875em 0.6875em 0 -0.3125em #fff,
+        2.0625em 0.9375em 0 -0.5625em #fff;
+    opacity: 0.3;
+    transform: scale(0.5) translate(6em, -3em);
+    animation: cloud 4s linear infinite;
+}
+.cloud:nth-child(2):after { background: #fff; }
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.8em;
+    height: 2.8em;
+    margin: -1.4em;
+    background: #fe0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius:50%;
+    box-shadow: 0 0 0.8em 0.375em #fe0;
+    animation: spin 12s infinite linear;
+}
+
+.rays {
+    position: absolute;
+    top: -1.85em;
+    left: 50%;
+    display: block;
+    width: 0.25em;
+    height: 1.125em;
+    margin-left: -0.125em;
+    background: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius:50%;
+    box-shadow: 0 5.375em #fff;
+}
+.rays:before,
+.rays:after {
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    display: block;
+    width: 0.25em;
+    height: 1.125em;
+    transform: rotate(60deg);
+    transform-origin: 50% 3.25em;
+    background: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius:50%;
+    box-shadow: 0 5.375em #fff;
+}
+.rays:before {
+    transform: rotate(120deg);
+}
+
+.cloud + .sun {
+    margin: -2em 1em;
+}
+
+.rain,
+.lightning,
+.snow{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 3.75em;
+    height: 3.75em;
+    margin: 0.375em 0 0 -2em;
+    background: currentColor;
+}
+
+.rain:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 1.125em;
+    height: 1.125em;
+    margin: -1em 0 0 -0.25em;
+    background: #0cf;
+    border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+    -moz-border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+    -webkit-border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+    -o-border-radius:100% 0 60% 50% / 60% 0 100% 50%;
+    box-shadow:
+        0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+        -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+        -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    transform: rotate(-28deg);
+    animation: rain 3s linear infinite;
+}
+
+.bolt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.25em 0 0 -0.125em;
+    color: #fff;
+    opacity: 0.3;
+    animation: lightning 2s linear infinite;
+}
+.bolt:nth-child(2) {
+    width: 0.5em;
+    height: 0.25em;
+    margin: -1.75em 0 0 -1.875em;
+    transform: translate(2.5em, 2.25em);
+    opacity: 0.2;
+    animation: lightning 1.5s linear infinite;
+}
+.bolt:before,
+.bolt:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin: -1.625em 0 0 -1.0125em;
+    border-top: 1.25em solid transparent;
+    border-right: 0.75em solid;
+    border-bottom: 0.75em solid;
+    border-left: 0.5em solid transparent;
+    transform: skewX(-10deg);
+}
+.bolt:after {
+    margin: -0.25em 0 0 -0.25em;
+    border-top: 0.75em solid;
+    border-right: 0.5em solid transparent;
+    border-bottom: 1.25em solid transparent;
+    border-left: 0.75em solid;
+    transform: skewX(-10deg);
+}
+.bolt:nth-child(2):before {
+    margin: -0.75em 0 0 -0.5em;
+    border-top: 0.625em solid transparent;
+    border-right: 0.375em solid;
+    border-bottom: 0.375em solid;
+    border-left: 0.25em solid transparent;
+}
+.bolt:nth-child(2):after {
+    margin: -0.125em 0 0 -0.125em;
+    border-top: 0.375em solid;
+    border-right: 0.25em solid transparent;
+    border-bottom: 0.625em solid transparent;
+    border-left: 0.375em solid;
+}
+
+.cloud + .snow {
+    margin: 0.375em 0 0 -2em;
+}
+
+.flake:before,
+.flake:after {
+    content: '\2744';
+    position: absolute;
+    top: 20%;
+    left: 46%;
+    margin: -1.025em 0 0 -1.0125em;
+    color: #0cf;
+    list-height: 1em;
+    opacity: 0.2;
+    animation: spin 8s linear infinite reverse;
+}
+.flake:after {
+    margin: 0.125em 0 0 -1em;
+    font-size: 1.5em;
+    opacity: 0.4;
+    animation: spin 14s linear infinite;
+}
+.flake:nth-child(2):before {
+    margin: -0.5em 0 0 0.25em;
+    font-size: 1.25em;
+    opacity: 0.2;
+    animation: spin 10s linear infinite;
+}
+.flake:nth-child(2):after {
+    margin: 0.375em 0 0 0.125em;
+    font-size: 2em;
+    opacity: 0.4;
+    animation: spin 16s linear infinite reverse;
+}
+
+
+/* == */ 
+.haze{
+    color: #fff;
+    height: 3.6875em;
+    width: 3.6875em;
+    left: 50%;
+    margin: -1.84375em;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.haze:before,
+.haze:after{
+    content: "";
+    width:2em;
+    height:2em;
+    position:absolute;
+    border:0.4375em solid;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.haze:before{
+    right:64.1421%;
+    margin-right:-0.21875em;
+    -webkit-border-radius:50% 0 50% 50%;
+    -moz-border-radius:50% 0 50% 50%;
+    -o-border-radius:50% 0 50% 50%;
+    border-radius: 50% 0 50% 50%;
+}
+.haze:after{
+    left:64.1421%;
+    margin-left:-0.21875em;
+    -webkit-border-radius:50% 50% 50% 0;
+    -moz-border-radius:50% 50% 50% 0;
+    -o-border-radius:50% 50% 50% 0;
+    border-radius:50% 50% 50% 0;
+}
+
+/* == */
+.fog{
+    color: #fff;
+    height: 3.6875em;
+    width: 3.6875em;
+    left: 50%;
+    margin: -1.84375em;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.fog:after{
+    content: "";
+    vertical-align:middle;
+    position:absolute;
+    font-style:normal;
+    color:#ddd;
+    direction:ltr;
+    color: #fff;
+    box-shadow: 0 0 0 7em inset, 0 1.5em, 0 3em;
+    height: 0.4375em;
+    width: 6em;
+    left:50%;
+    top:50%;
+    margin: -1.75em 0 0 -3em;
+}
+
+
+/* Animations */ 
+/* day */
+@-webkit-keyframes sky_day {
+    0% {
+        background: #007fd5;
+        color: #007fd5
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5
+    }
+}
+@-moz-keyframes sky_day {
+    0% {
+        background: #007fd5;
+        color: #007fd5
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5
+    }
+}
+@keyframes sky_day {
+    0% {
+        background: #007fd5;
+        color: #007fd5
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5
+    }
+}
+
+/* night */
+@-webkit-keyframes sky_night {
+    0% {
+        background: #007fd5;
+        color: #007fd5
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5
+    }
+}
+@-moz-keyframes sky_night {
+    0% {
+        background: #007fd5;
+        color: #007fd5
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5
+    }
+}
+@keyframes sky_night {
+    0% {
+        background: #007fd5;
+        color: #007fd5
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5
+    }
+}
+
+@-webkit-keyframes cloud_one {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@-moz-keyframes cloud_one {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@keyframes cloud_one {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-webkit-keyframes cloud_two {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@-moz-keyframes cloud_two {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@keyframes cloud_two {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@-webkit-keyframes cloud_three {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@-moz-keyframes cloud_three {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@keyframes cloud_three {
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cloud {
+    0% { opacity: 0; }
+    50% { opacity: 0.3; }
+    100% {
+        opacity: 0;
+        transform: scale(0.5) translate(-200%, -3em);
+    }
+}
+
+@keyframes rain {
+    0% {
+        background: #0cf;
+        box-shadow:
+            0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+            -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+            -1.375em -0.125em 0 #0cf;
+    }
+    25% {
+        box-shadow:
+            0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+            -0.875em 1.125em 0 -0.125em #0cf,
+            -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    }
+    50% {
+        background: rgba(255,255,255,0.3);
+        box-shadow:
+            0.625em 0.875em 0 -0.125em #0cf,
+            -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+            -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    }
+    100% {
+        box-shadow:
+            0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+            -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+            -1.375em -0.125em 0 #0cf;
+    }
+}
+
+@keyframes lightning {
+    45% {
+        color: #fff;
+        background: #fff;
+        opacity: 0.2;
+    }
+    50% {
+        color: #fe0;
+        background: #fe0;
+        opacity: 1;
+    }
+    55% {
+        color: #f60;
+        background: #f60;
+        opacity: 0.2;
+    }
+}

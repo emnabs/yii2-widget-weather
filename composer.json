@@ -1,0 +1,23 @@
+{
+    "name": "emnabs/yii2-widget-weather",
+    "description": "Yii2 Weather Widget",
+    "keywords": ["yii2", "weather", "widget"],
+    "homepage": "https://github.com/emnabs/yii2-widget-weather",
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "emhome",
+            "email": "emhome@163.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "emhome\\weather\\": ""
+        }
+    }
+}
