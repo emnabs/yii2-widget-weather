@@ -7,7 +7,7 @@
  * @version 1.1.1
  */
 
-namespace widgets\weather;
+namespace emhome\weather;
 
 use Yii;
 use yii\bootstrap\Widget;
