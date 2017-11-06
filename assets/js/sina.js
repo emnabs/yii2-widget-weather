@@ -124,7 +124,7 @@ var Weather = function () {
         //main function to initiate the module
         init: function (options) {
             element = $('#' + options.element);
-            if (element.size() == 0) {
+            if (element.length == 0) {
                 return;
             }
             tpls = options.tpls;
